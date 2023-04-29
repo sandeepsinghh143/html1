@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding: 0;;
+}
+.main{
+    margin:0 80px;
+}
+.flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+.flex-section .description{
+    width:300px;
+}
+.flex .flex-section{
+    background-color: rgb(251, 249, 249);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+    margin:10px;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+/* grid----csss */
+
+.container{
+    width: 100%;
+}
+
+.grid{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-rows: repeat(4, 200px);
+    column-gap: 10px;
+    row-gap: 10px;
+    
+}
+
+.grid-item img{
+    width:100%;
+    height:200px;
+}
+.item1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.item8{
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.item9{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+}
+.item1 img{
+    height:410px;
+}
+.item8 img{
+    height:410px;
+}
+.item9 img{
+    height:410px;
+}
+
+
+/* cards css */
+
+.mycards{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: center;
+}
+.mycards .card{
+    padding:5px;
+    margin:20px;
+}
+/* footer css */
+
+.footer{
+    position: relative;
+    background-color: rgb(244, 240, 240);
+}
+ul{
+    list-style: none;
+}
+.foot-list{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+.foot-main{
+    margin: 0 100px;
+}
+.top-button{
+    position:absolute;
+    background-color: blue;
+    color: white;
+    left:300px;
+    bottom:18px;
+}
+@media screen and (max-width:1023px) {
+    
+}
